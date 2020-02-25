@@ -9,8 +9,28 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @ObservedObject var obs = Observer()
+    @State var email: String = ""
+    @State var password: String = ""
+    let defaults = UserDefaults.standard
+    
     var body: some View {
-        Text("Hello, World!")
+        NavigationView {
+            VStack {
+                List {
+                    ForEach(obs.categories) {i in
+                        Text(i.name)
+                    }
+                }
+            }
+            .navigationBarTitle("Tasks")
+            .onAppear {
+                self.obs.getTasks()
+                self.obs.getCategories()
+                self.obs.getPriorities()
+            }
+        }
     }
 }
 
