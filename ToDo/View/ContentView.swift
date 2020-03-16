@@ -19,12 +19,14 @@ struct ContentView: View {
         NavigationView {
             VStack {
                 List {
-                    ForEach(obs.categories) {i in
-                        Text(i.name)
+                    ForEach(obs.tasks) {i in
+                        Section(header: Text(i.category.name)) {
+                            TaskView(task: i)
+                        }
                     }
                 }
             }
-            .navigationBarTitle("Tasks")
+            .navigationBarTitle("Not Forgot!")
             .onAppear {
                 self.obs.getTasks()
                 self.obs.getCategories()

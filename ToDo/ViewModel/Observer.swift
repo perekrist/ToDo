@@ -32,7 +32,6 @@ class Observer: ObservableObject {
             for i in json {
                 self.priorities.append(Priority(name: i.1["name"].stringValue, id: i.1["id"].intValue, color: i.1["color"].stringValue))
             }
-            print(self.priorities)
         }
     }
     
@@ -42,7 +41,6 @@ class Observer: ObservableObject {
             for i in json {
                 self.categories.append(Category(name: i.1["name"].stringValue, id: i.1["id"].intValue))
             }
-            print(self.categories)
         }
     }
     
@@ -52,7 +50,6 @@ class Observer: ObservableObject {
             for i in json {
                 self.tasks.append(Task(deadline: i.1["deadline"].intValue, id: i.1["id"].intValue, created: i.1["created"].intValue, title: i.1["title"].stringValue, category: Category(name: i.1["category"]["name"].stringValue, id: i.1["category"]["id"].intValue), priority: Priority(name: i.1["priority"]["name"].stringValue, id: i.1["category"]["name"].intValue, color: i.1["category"]["color"].stringValue), done: i.1["done"].intValue, description: i.1["description"].stringValue))
             }
-            print(self.tasks)
         }
     }
 }

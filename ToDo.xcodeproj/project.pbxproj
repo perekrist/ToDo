@@ -17,6 +17,7 @@
 		CA27C4802404DC8D00F28FD1 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = CA27C47F2404DC8D00F28FD1 /* Alamofire */; };
 		CA27C4832404DCB300F28FD1 /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = CA27C4822404DCB300F28FD1 /* SwiftyJSON */; };
 		CA27C485240510FD00F28FD1 /* Structs.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA27C484240510FD00F28FD1 /* Structs.swift */; };
+		CAE97719241F5517000C03E7 /* TaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE97718241F5517000C03E7 /* TaskView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		CA27C4762404DABB00F28FD1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CA27C47C2404DB4800F28FD1 /* Observer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observer.swift; sourceTree = "<group>"; };
 		CA27C484240510FD00F28FD1 /* Structs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Structs.swift; sourceTree = "<group>"; };
+		CAE97718241F5517000C03E7 /* TaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,15 +66,15 @@
 		CA27C4672404DAB700F28FD1 /* ToDo */ = {
 			isa = PBXGroup;
 			children = (
+				CAE97717241F54E9000C03E7 /* ViewModel */,
+				CAE97716241F54E1000C03E7 /* View */,
+				CAE97715241F54D9000C03E7 /* Model */,
 				CA27C4682404DAB700F28FD1 /* AppDelegate.swift */,
 				CA27C46A2404DAB700F28FD1 /* SceneDelegate.swift */,
-				CA27C46C2404DAB700F28FD1 /* ContentView.swift */,
 				CA27C46E2404DABB00F28FD1 /* Assets.xcassets */,
 				CA27C4732404DABB00F28FD1 /* LaunchScreen.storyboard */,
 				CA27C4762404DABB00F28FD1 /* Info.plist */,
 				CA27C4702404DABB00F28FD1 /* Preview Content */,
-				CA27C47C2404DB4800F28FD1 /* Observer.swift */,
-				CA27C484240510FD00F28FD1 /* Structs.swift */,
 			);
 			path = ToDo;
 			sourceTree = "<group>";
@@ -83,6 +85,31 @@
 				CA27C4712404DABB00F28FD1 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		CAE97715241F54D9000C03E7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CA27C484240510FD00F28FD1 /* Structs.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CAE97716241F54E1000C03E7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CA27C46C2404DAB700F28FD1 /* ContentView.swift */,
+				CAE97718241F5517000C03E7 /* TaskView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CAE97717241F54E9000C03E7 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				CA27C47C2404DB4800F28FD1 /* Observer.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -167,6 +194,7 @@
 				CA27C4692404DAB700F28FD1 /* AppDelegate.swift in Sources */,
 				CA27C47D2404DB4800F28FD1 /* Observer.swift in Sources */,
 				CA27C485240510FD00F28FD1 /* Structs.swift in Sources */,
+				CAE97719241F5517000C03E7 /* TaskView.swift in Sources */,
 				CA27C46B2404DAB700F28FD1 /* SceneDelegate.swift in Sources */,
 				CA27C46D2404DAB700F28FD1 /* ContentView.swift in Sources */,
 			);
