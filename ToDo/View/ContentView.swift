@@ -12,7 +12,7 @@ struct ContentView: View {
     NavigationView {
       List {
         ForEach(viewModel.tasks) { task in
-          Section(header: Text(task.category?.name ?? "-")) {
+          Section(header: Text(task.category?.name ?? "-- No category --")) {
             TaskView(task: task)
           }
         }

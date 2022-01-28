@@ -44,7 +44,7 @@ struct TaskView: View {
       
     }.background(Color.white)
       .sheet(isPresented: self.$isSheet) {
-        Text(task.category?.name ?? "-")
+        Text(task.category?.name ?? "-- No category --")
       }
   }
 }

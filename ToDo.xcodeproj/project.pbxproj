@@ -17,7 +17,8 @@
 		CA27C485240510FD00F28FD1 /* TaskModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA27C484240510FD00F28FD1 /* TaskModel.swift */; };
 		CAA4A2A6279FE53900C65218 /* Priority.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAA4A2A5279FE53900C65218 /* Priority.swift */; };
 		CAA4A2A8279FE54E00C65218 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAA4A2A7279FE54E00C65218 /* Category.swift */; };
-		CAA4A2AA279FE93C00C65218 /* AuthResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAA4A2A9279FE93C00C65218 /* AuthResponse.swift */; };
+		CAA4A2AA279FE93C00C65218 /* TokenResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAA4A2A9279FE93C00C65218 /* TokenResponse.swift */; };
+		CAAC98C727A3D144009EAA69 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAAC98C627A3D144009EAA69 /* NetworkService.swift */; };
 		CAE97719241F5517000C03E7 /* TaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE97718241F5517000C03E7 /* TaskView.swift */; };
 /* End PBXBuildFile section */
 
@@ -34,7 +35,8 @@
 		CA27C484240510FD00F28FD1 /* TaskModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskModel.swift; sourceTree = "<group>"; };
 		CAA4A2A5279FE53900C65218 /* Priority.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Priority.swift; sourceTree = "<group>"; };
 		CAA4A2A7279FE54E00C65218 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
-		CAA4A2A9279FE93C00C65218 /* AuthResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthResponse.swift; sourceTree = "<group>"; };
+		CAA4A2A9279FE93C00C65218 /* TokenResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenResponse.swift; sourceTree = "<group>"; };
+		CAAC98C627A3D144009EAA69 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		CAE97718241F5517000C03E7 /* TaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -68,6 +70,7 @@
 		CA27C4672404DAB700F28FD1 /* ToDo */ = {
 			isa = PBXGroup;
 			children = (
+				CAAC98C527A3D134009EAA69 /* Services */,
 				CAE97717241F54E9000C03E7 /* ViewModel */,
 				CAE97716241F54E1000C03E7 /* View */,
 				CAE97715241F54D9000C03E7 /* Model */,
@@ -92,15 +95,23 @@
 		CAA4A2AB279FEAC700C65218 /* Responses */ = {
 			isa = PBXGroup;
 			children = (
-				CAA4A2A9279FE93C00C65218 /* AuthResponse.swift */,
+				CAA4A2A9279FE93C00C65218 /* TokenResponse.swift */,
 			);
 			path = Responses;
+			sourceTree = "<group>";
+		};
+		CAAC98C527A3D134009EAA69 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				CAAC98C627A3D144009EAA69 /* NetworkService.swift */,
+				CAA4A2AB279FEAC700C65218 /* Responses */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 		CAE97715241F54D9000C03E7 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				CAA4A2AB279FEAC700C65218 /* Responses */,
 				CA27C484240510FD00F28FD1 /* TaskModel.swift */,
 				CAA4A2A5279FE53900C65218 /* Priority.swift */,
 				CAA4A2A7279FE54E00C65218 /* Category.swift */,
@@ -200,11 +211,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CAAC98C727A3D144009EAA69 /* NetworkService.swift in Sources */,
 				CA27C4692404DAB700F28FD1 /* AppDelegate.swift in Sources */,
 				CA27C47D2404DB4800F28FD1 /* ContentViewModel.swift in Sources */,
 				CAA4A2A6279FE53900C65218 /* Priority.swift in Sources */,
 				CA27C485240510FD00F28FD1 /* TaskModel.swift in Sources */,
-				CAA4A2AA279FE93C00C65218 /* AuthResponse.swift in Sources */,
+				CAA4A2AA279FE93C00C65218 /* TokenResponse.swift in Sources */,
 				CAE97719241F5517000C03E7 /* TaskView.swift in Sources */,
 				CA27C46B2404DAB700F28FD1 /* SceneDelegate.swift in Sources */,
 				CA27C46D2404DAB700F28FD1 /* ContentView.swift in Sources */,
